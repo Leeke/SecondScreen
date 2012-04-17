@@ -7,6 +7,7 @@
  */
 
 var news_timeline = new Timeline();
+var news_timeline = new Timeline(); // this has to move from here!
 var webContents = new Array();
 
 // ------------------- Objects ----------------------------------------
