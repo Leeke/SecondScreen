@@ -6,6 +6,9 @@
  *
  */
 
+/**
+ * Note: This file need to be reorganized fo better effeciency!
+ */
 var news_timeline = new Timeline(); // this has to move from here!
 var webContents = new Array();
 
