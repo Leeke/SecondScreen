@@ -1,0 +1,28 @@
+
+// Timeline topics
+{
+"topics": [
+{"id":"1", "thumbnailURL":"resources/topics_thumbnails/topic_1.jpg","title_str":"Egypt poll nominee draws warning", "subtitle_str":"Egypt's Muslim Brotherhood warns of renewed turmoil after Hosni Mubarak's ex-spy chief declares his candidacy for the forthcoming presidential elections.", "start_time":"2", "end_time":"62"},
+{"id":"2", "thumbnailURL":"resources/topics_thumbnails/topic_2.jpg","title_str":"Syrian border fire angers Turkey", "subtitle_str":"Turkey reacts angrily after Syrian fire across its border causes casualties, as a UN-brokered ceasefire plan looks increasingly in doubt.", "start_time":"63", "end_time":"95"},
+{"id":"3", "thumbnailURL":"resources/topics_thumbnails/topic_3.jpg","title_str":"Titanic records published online", "subtitle_str":"More than 200,000 records relating to the ill-fated Titanic cruise liner are published online as the centenary of the infamous disaster approaches.", "start_time":"96", "end_time":"120"},
+{"id":"4", "thumbnailURL":"resources/topics_thumbnails/topic_4.jpg","title_str":"Deadly blast rocks south Somalia city", "subtitle_str":"Al-Shabab claims responsibility for bomb attack in southern city of Baidoa that killed at least 12 people.", "start_time":"121", "end_time":"162"},
+{"id":"5", "thumbnailURL":"resources/topics_thumbnails/topic_5.jpg","title_str":"Suspects arrested in US shootings", "subtitle_str":"Two men held in Oklahoma state after recent attacks left three African Americans dead and two others critically wounded.", "start_time":"63", "end_time":"95"},
+{"id":"6", "thumbnailURL":"resources/topics_thumbnails/topic_6.jpg","title_str":"Weather", "subtitle_str":"Spring is closer than we might expect.", "start_time":"96", "end_time":"120"},
+{"id":"7", "thumbnailURL":"resources/topics_thumbnails/topic_7.jpg","title_str":"Sport", "subtitle_str":"Real frustrated by Valencia, Watson wins Masters in playoff...", "start_time":"121", "end_time":"162"}
+],
+"webContents":[
+{"id":"11", "type":"image", "length":"0", "availabilityTime":"3", "thumbnailURL":"", "url":"resources/images/topic_1_omar.jpg", "alternativeURL":"", "topicID":"1"},
+{"id":"12", "type":"text", "length":"0", "availabilityTime":"5", "thumbnailURL":"", "url":"resources/facts/topic_1.html", "alternativeURL":"", "topicID":"1"},
+{"id":"13", "type":"video", "length":"148", "availabilityTime":"10", "thumbnailURL":"", "url":"resources/media/topic_1.mp4", "alternativeURL":"", "topicID":"1"},
+{"id":"21", "type":"text", "length":"0", "availabilityTime":"5", "thumbnailURL":"", "url":"resources/facts/topic_1.html", "alternativeURL":"", "topicID":"2"},
+{"id":"31", "type":"image", "length":"0", "availabilityTime":"3", "thumbnailURL":"", "url":"resources/images/topic_6.png", "alternativeURL":"", "topicID":"3"},
+{"id":"32", "type":"image", "length":"0", "availabilityTime":"3", "thumbnailURL":"", "url":"resources/images/topic_4.jpg", "alternativeURL":"", "topicID":"3"},
+{"id":"41", "type":"image", "length":"0", "availabilityTime":"3", "thumbnailURL":"", "url":"resources/images/topic_1_omar.jpg", "alternativeURL":"", "topicID":"4"},
+{"id":"51", "type":"image", "length":"0", "availabilityTime":"3", "thumbnailURL":"", "url":"resources/images/topic_1_omar.jpg", "alternativeURL":"", "topicID":"5"},
+{"id":"61", "type":"image", "length":"0", "availabilityTime":"3", "thumbnailURL":"", "url":"resources/images/topic_6.png", "alternativeURL":"", "topicID":"6"},
+{"id":"62", "type":"image", "length":"0", "availabilityTime":"3", "thumbnailURL":"", "url":"resources/images/topic_6_2.jpg", "alternativeURL":"", "topicID":"6"},
+{"id":"71", "type":"image", "length":"0", "availabilityTime":"3", "thumbnailURL":"", "url":"resources/images/topic_1_omar.jpg", "alternativeURL":"", "topicID":"7"},
+{"id":"72", "type":"image", "length":"0", "availabilityTime":"3", "thumbnailURL":"", "url":"resources/images/topic_6_2.jpg", "alternativeURL":"", "topicID":"7"},
+{"id":"73", "type":"video", "length":"148", "availabilityTime":"10", "thumbnailURL":"", "url":"resources/media/topic_1.mp4", "alternativeURL":"", "topicID":"7"}
+]
+}
