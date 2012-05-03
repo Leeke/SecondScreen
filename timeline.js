@@ -9,7 +9,7 @@
 /**
  * Note: This file need to be reorganized fo better effeciency!
  */
-var news_timeline = new Timeline(); // this has to move from here!
+var news_timeline = new Timeline(); // this has to move from here! Updated :)
 var webContents = new Array();
 
 // ------------------- Objects ----------------------------------------
