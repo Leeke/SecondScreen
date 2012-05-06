@@ -264,11 +264,11 @@ function setWebContent(contentID) {
 
 	switch(type) {
 		case 'image':
-			content_item = $('<div ><image src="' + contentURL + '" /></div>');
+			content_item = $('<div id="content_ldr"><image src="' + contentURL + '" /></div>');
 			content_item.appendTo('#sync_content_stage');
 			break;
 		case 'video':
-			content_item = $('<div ><video width="560" height="340" controls><source src="' + contentURL + '" type="video/mp4" /></video></div>');
+			content_item = $('<div  id="content_ldr" ><video width="560" height="340" controls><source src="' + contentURL + '" type="video/mp4" /></video></div>');
 			content_item.appendTo('#sync_content_stage');
 			break;
 		case 'text':

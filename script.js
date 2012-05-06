@@ -1,5 +1,5 @@
 $(document).bind("mobileinit", function(){
-    $.mobile.defaultPageTransition = 'flip';
+    $.mobile.defaultPageTransition = 'slide';
     loadTimeline();
 });    
 
