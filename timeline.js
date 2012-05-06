@@ -173,6 +173,7 @@ function updateView() {
 		var duration = news_timeline.topics[i].end_time - news_timeline.topics[i].start_time;
 		var tl_item = $('<a class="tl_item" id="' + id + '" href="#"><div ><image src="' + thumb + '" /><p class="timeline_label" >' + title + '</p></div></a>');
 		tl_item.appendTo('#tl_scroll_area');
+		handleBookmarking(tl_item, id, true)
 		tl_items_arr.push(tl_item);
 	}
 
@@ -216,6 +217,8 @@ function updateView() {
 		var topicHeadline = $('<h1 >' + headline_str + '</h1>');
 		topicHeadline.appendTo('#sync_content_header');
 		
+		handleBookmarking('#sync_content_header', getTopicID(startContentID), false);	
+		
 		setWebContent(startContentID);
 		
 		// Add event handler to webconten navigation
@@ -232,14 +235,7 @@ function updateView() {
 //Helper clases
 function getTopicHeadline(contentID) {
 	var headline;
-	var topicID;
-	
-	for( i = 0; i < webContents.length; i++) {
-		if(webContents[i].id == contentID) {
-			topicID = webContents[i].topicID;
-			break;
-		}
-	}
+	var topicID = getTopicID(contentID);
 	
 	for( i = 0; i < news_timeline.topics.length; i++) {
 		if(news_timeline.topics[i].id == topicID) {
@@ -250,6 +246,18 @@ function getTopicHeadline(contentID) {
 	return headline;
 }
 
+function getTopicID(contentID) {
+	var topicID;
+	
+	for( i = 0; i < webContents.length; i++) {
+		if(webContents[i].id == contentID) {
+			topicID = webContents[i].topicID;
+			break;
+		}
+	}
+	return topicID;
+}	
+
 function setWebContent(contentID) {
 	$('#sync_content_stage').empty();
 
@@ -259,7 +267,6 @@ function setWebContent(contentID) {
 			var contentURL = webContents[i].url;
 		}
 	}
-
 	var content_item;
 
 	switch(type) {
@@ -277,3 +284,36 @@ function setWebContent(contentID) {
 	}
 	
 }
+
+function handleBookmarking(container, topicID, thumb) {
+	// add Bookmark Button
+		var btn_class;
+		if(thumb){
+			btn_class = "bookmarkbtn_thumb";
+		} else {
+			btn_class = "bookmarkbtn";
+		}
+		
+		var isBookmarked = false; // TODO: Check if Topic is bookmarked
+		var btnID = 'bookmark'+ topicID;
+		var btn = $('<div class="'+ btn_class +'" id="'+ btnID+ '"><a href="#" ></a></div>');
+		btn.appendTo(container);
+		
+		// bookmark button click listener
+		
+		$('#'+btnID).click(function(e) {
+			
+			if(isBookmarked){
+				isBookmarked = false;
+				$('#'+btnID).css('backgroundImage','url(img/btns/bookmark_off.png)');
+				// //TODO: unbookmark
+			 } else {
+				isBookmarked = true;
+				$('#'+btnID).css('backgroundImage','url(img/btns/bookmark_on.png)');
+				// //TODO: bookmark
+			 }
+			
+		return false;	
+		});
+	
+}	
